@@ -1,0 +1,27 @@
+{
+  "name": "create_project",
+  "description": "Create a Linear project, optionally attaching external links.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "name": {
+      "type": "string",
+      "description": "The project name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional project description."
+    },
+    "lead": {
+      "type": "string",
+      "description": "Optional project lead, by user name or \"me\"."
+    },
+    "target_date": {
+      "type": "string",
+      "description": "Optional target date as an ISO date, YYYY-MM-DD."
+    },
+    "links": {
+      "type": "string",
+      "description": "Optional comma-separated list of external URLs to attach to the project, for example \"https://figma.com/file/abc,https://example.com/spec\"."
+    }
+  }
+}

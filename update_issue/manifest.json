@@ -1,0 +1,47 @@
+{
+  "name": "update_issue",
+  "description": "Update an existing Linear issue's fields or labels.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "issue": {
+      "type": "string",
+      "description": "The issue to update, as a human identifier such as \"STA-123\". Required."
+    },
+    "title": {
+      "type": "string",
+      "description": "Optional. The new title."
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional. The new description, in Markdown. Pass an empty string to clear it."
+    },
+    "state": {
+      "type": "string",
+      "description": "Optional. The workflow state name, for example \"In Progress\"."
+    },
+    "assignee": {
+      "type": "string",
+      "description": "Optional. The assignee's name, or \"me\" for the account the API key belongs to."
+    },
+    "priority": {
+      "type": "string",
+      "description": "Optional. One of: none, urgent, high, medium, low."
+    },
+    "project": {
+      "type": "string",
+      "description": "Optional. The name of the project to move the issue to."
+    },
+    "due_date": {
+      "type": "string",
+      "description": "Optional. Due date as an ISO date, for example \"2026-09-30\"."
+    },
+    "add_labels": {
+      "type": "string",
+      "description": "Optional. Comma-separated label names to add. Existing labels are preserved; only use remove_labels to drop labels."
+    },
+    "remove_labels": {
+      "type": "string",
+      "description": "Optional. Comma-separated label names to remove. Other labels are preserved."
+    }
+  }
+}

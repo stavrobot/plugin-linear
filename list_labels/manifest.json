@@ -1,0 +1,6 @@
+{
+  "name": "list_labels",
+  "description": "List the issue labels available in the workspace, with their descriptions and the label group each one belongs to, if any.",
+  "entrypoint": "run.py",
+  "parameters": {}
+}

@@ -1,0 +1,15 @@
+{
+  "name": "search_issues",
+  "description": "Full-text search Linear issues by keyword. Matches titles, descriptions and comments. Use this for text search; use list_issues for structured filters.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "query": {
+      "type": "string",
+      "description": "The search term."
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum number of results to return (default 25, maximum 250)."
+    }
+  }
+}

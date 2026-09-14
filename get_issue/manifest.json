@@ -1,0 +1,11 @@
+{
+  "name": "get_issue",
+  "description": "Get a single Linear issue in full by its identifier (e.g. 'ENG-123'), including description, state, assignee, priority, project, labels, due date, URL, timestamps, parent and sub-issues, and up to its 20 most recent comments.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "identifier": {
+      "type": "string",
+      "description": "The Linear issue identifier, e.g. 'ENG-123'."
+    }
+  }
+}

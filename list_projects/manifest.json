@@ -1,0 +1,6 @@
+{
+  "name": "list_projects",
+  "description": "List the workspace's projects with their status, lead, target date and progress, plus any external links attached to them.",
+  "entrypoint": "run.py",
+  "parameters": {}
+}

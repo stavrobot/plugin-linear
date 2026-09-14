@@ -1,0 +1,6 @@
+{
+  "name": "list_states",
+  "description": "List the team's workflow states (for example Backlog, In Progress, Done) in workflow order, with each state's type. The type shows which states mean work is finished.",
+  "entrypoint": "run.py",
+  "parameters": {}
+}

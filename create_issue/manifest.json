@@ -1,0 +1,35 @@
+{
+  "name": "create_issue",
+  "description": "Create a new issue in Linear.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "title": {
+      "type": "string",
+      "description": "The issue title. Required."
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional. The issue description, in Markdown."
+    },
+    "assignee": {
+      "type": "string",
+      "description": "Optional. The assignee's name, or \"me\" for the account the API key belongs to."
+    },
+    "priority": {
+      "type": "string",
+      "description": "Optional. One of: none, urgent, high, medium, low."
+    },
+    "project": {
+      "type": "string",
+      "description": "Optional. The name of the project to add the issue to."
+    },
+    "labels": {
+      "type": "string",
+      "description": "Optional. Comma-separated label names, for example \"Bug, P1\". Each must exist; an unknown name fails."
+    },
+    "due_date": {
+      "type": "string",
+      "description": "Optional. Due date as an ISO date, for example \"2026-09-30\"."
+    }
+  }
+}

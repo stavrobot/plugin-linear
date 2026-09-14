@@ -1,0 +1,7 @@
+config.json
+misc/
+__pycache__/
+*.pyc
+.tickets/
+.ruff_cache/
+.pytest_cache/

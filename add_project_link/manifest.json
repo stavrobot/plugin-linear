@@ -1,0 +1,19 @@
+{
+  "name": "add_project_link",
+  "description": "Attach an external URL to an existing Linear project.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project to attach the link to."
+    },
+    "url": {
+      "type": "string",
+      "description": "The external URL to attach. Must start with http:// or https://."
+    },
+    "label": {
+      "type": "string",
+      "description": "Optional display title for the link. Defaults to the URL's hostname."
+    }
+  }
+}

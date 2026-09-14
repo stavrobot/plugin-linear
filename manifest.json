@@ -1,0 +1,11 @@
+{
+  "name": "linear",
+  "description": "Manage your Linear issues, projects, labels, and comments.",
+  "config": {
+    "api_key": {
+      "required": true,
+      "description": "Linear personal API key. Create one in Linear under Settings > Security and access > Personal API keys (https://linear.app/settings/account/security)."
+    }
+  },
+  "instructions": "Set api_key to a Linear personal API key so the plugin can talk to your workspace. In Linear, open Settings > Security and access > Personal API keys, create a key, and copy it into this plugin's configuration. The key acts as your user and can read and write your Linear data, so treat it as a secret and do not share it."
+}

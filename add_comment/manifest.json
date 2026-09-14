@@ -1,0 +1,16 @@
+{
+  "name": "add_comment",
+  "description": "Add a comment to an existing Linear issue.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "issue": {
+      "type": "string",
+      "description": "The issue to comment on, as a human identifier such as \"STA-123\". Required."
+    },
+    "body": {
+      "type": "string",
+      "description": "The comment text, in Markdown. Required."
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "list_issues",
+  "description": "List Linear issues with optional state, project, label and assignee filters. With no filters, lists your open issues (assigned to you, excluding completed and cancelled).",
+  "entrypoint": "run.py",
+  "parameters": {
+    "state": {
+      "type": "string",
+      "description": "Filter by workflow state name, e.g. 'In Progress'. Defaults to any open state (completed and cancelled are excluded)."
+    },
+    "project": {
+      "type": "string",
+      "description": "Filter by project name."
+    },
+    "label": {
+      "type": "string",
+      "description": "Filter by label name."
+    },
+    "assignee": {
+      "type": "string",
+      "description": "Filter by assignee name, or 'me' for yourself, or 'anyone' for all assignees. Defaults to you."
+    },
+    "limit": {
+      "type": "integer",
+      "description": "Maximum number of issues to return (default 25, maximum 250)."
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "create_label",
+  "description": "Create a workspace-level Linear issue label.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "name": {
+      "type": "string",
+      "description": "The label name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description for the label."
+    },
+    "color": {
+      "type": "string",
+      "description": "Optional hex color such as \"#ff0000\". Linear picks a color when this is omitted."
+    }
+  }
+}
