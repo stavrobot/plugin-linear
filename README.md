@@ -14,6 +14,7 @@ issues, comments, labels, and projects — through the assistant.
 - **create_issue** — create an issue, with optional description, assignee, priority, project, labels and due date.
 - **update_issue** — change an issue's fields, or add and remove its labels.
 - **add_comment** — add a Markdown comment to an issue.
+- **delete_issue** — move an issue to the trash. Destructive and recoverable in Linear for about 30 days; confirm with the user first.
 - **create_label** — create a workspace-level issue label.
 - **create_project** — create a project, optionally attaching external links.
 - **add_project_link** — attach an external URL to an existing project.
@@ -69,9 +70,9 @@ Linear's integer values.
 
 ## Issue identifiers
 
-`get_issue`, `update_issue` and `add_comment` take the human identifier Linear
-displays, such as `ENG-123`, not a UUID. It is case-insensitive: `eng-123`
-works.
+`get_issue`, `update_issue`, `add_comment` and `delete_issue` take the human
+identifier Linear displays, such as `ENG-123`, not a UUID. It is
+case-insensitive: `eng-123` works.
 
 The plugin talks to a single Linear team and no tool takes a team parameter;
 your account's first team is used, so on a workspace with several teams this

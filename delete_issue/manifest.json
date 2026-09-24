@@ -1,0 +1,11 @@
+{
+  "name": "delete_issue",
+  "description": "Move an existing Linear issue to the trash. This is destructive: the issue leaves your workspace, though Linear keeps it restorable for about 30 days. Confirm with the user before calling; it is never a permanent delete.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "issue": {
+      "type": "string",
+      "description": "The issue to move to the trash, as a human identifier such as \"STA-123\". Required. The issue is trashed, not permanently deleted."
+    }
+  }
+}
