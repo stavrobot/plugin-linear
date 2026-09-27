@@ -1,6 +1,7 @@
 {
   "name": "linear",
   "description": "Manage your Linear issues, projects, labels, and comments.",
+  "summary": "Manage Linear issues and projects",
   "config": {
     "api_key": {
       "required": true,
